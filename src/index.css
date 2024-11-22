@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-[#1766FF] text-white hover:bg-[#1456DB];
+  }
+  
+  .btn-secondary {
+    @apply border border-gray-300 hover:bg-gray-50;
+  }
+
+  .back-button {
+    @apply flex items-center text-gray-600 hover:text-[#1766FF] mb-6 transition-colors;
+  }
+}
+
+.primary-blue {
+  color: #1766FF;
+}
+
+.bg-primary-blue {
+  background-color: #1766FF;
+}
+
+.hover-primary-blue:hover {
+  background-color: #1456DB;
+}
